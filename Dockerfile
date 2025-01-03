@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04
+FROM --platform=linux/arm64 nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04
 
 # 替换ubuntu镜像源为国内USTC源
 COPY ./sources.list /etc/apt/
